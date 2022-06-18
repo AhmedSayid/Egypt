@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>LOGIN</title>
+	<link rel="stylesheet" type="text/css" href="./assest/css/login.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<link rel="icon" href="./assest/img/pharaoh.png">
+	<link rel="shortcut" href="./assest/img/pharaoh.png">
+	<link rel="apple-touch-icon" href="./assest/img/pharaoh.png">
+
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<img class="wave" src="./assest/img/wave.png">
+	<div class="container">
+		<div class="img">
+			<img src="./assest/img/login1.png">
+		</div>
+		<div class="login-content">
+			<span>
+
+				<img src="./assest/img/pharaoh.png">
+
+				<h2 class="title">Welcome</h2>
+				<div class="input-div one">
+					<div class="i">
+						<i class="fas fa-user"></i>
+					</div>
+					<div class="div">
+						<h5>Username</h5>
+						<input type="text" class="input" id="tbh">
+					</div>
+				</div>
+				<div class="input-div pass">
+					<div class="i">
+						<i class="fas fa-lock"></i>
+					</div>
+					<div class="div">
+						<h5>Password</h5>
+						<input type="password" class="input">
+					</div>
+				</div>
+				<input type="submit" class="btn" id="btn">
+			</span>
+		</div>
+	</div>
+	<!--Ahmed sayed-->>
+	<script>
+		const inputs = document.querySelectorAll(".input");
+
+
+		function addcl() {
+			let parent = this.parentNode.parentNode;
+			parent.classList.add("focus");
+		}
+
+		function remcl() {
+			let parent = this.parentNode.parentNode;
+			if (this.value == "") {
+				parent.classList.remove("focus");
+			}
+		}
+		inputs.forEach(input => {
+			input.addEventListener("focus", addcl);
+			input.addEventListener("blur", remcl);
+		});
+	</script>
+	<script>
+		/////////////////////////////////////////////
+		document.getElementById('btn').onclick =()=> {
+			var
+				tbh = document.getElementById("tbh")
+			if (tbh.value === '') {
+				alert("please login")
+			}
+			else {
+				location.href = "./index.html"
+			}
+		}
+
+	</script>
+
+
+
+</body>
+
+</html>
+    <!--Ahmed sayed-->

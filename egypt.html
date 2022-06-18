@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Our Achievements</title>
+    <link rel="stylesheet" href="./assest/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body style="cursor: pointer;" onload="loadCSS()" >
+    <header>
+            <div class="logo">
+                <img src="./assest/img/icon.png" class="icon">
+                <div onclick="goto()">
+                    <p class="discover">Discover</p>
+                    <p class="egypt">egypt</p>
+                </div>
+            </div>
+
+                <ul>
+                    <li><a href="./about.html">ABOUT Us</a></li>
+                    <img src="./assest/img/burger.png" class="burger">
+                </ul>
+            </a>
+
+
+    </header>
+        <section onclick="goto()">
+            <img src="./assest/img/stars.png" id="stars" alt="">
+            <img src="./assest/img/moon.png" id="moon" alt="">
+            <img src="./assest/img/mountain.png" id="mountain" alt="">
+            <img src="./assest/img/mountain-back.png" id="mountain-back" alt="">
+            <img src="./assest/img/mountain-front.png" id="mountain-front" alt="">
+            <a href="#" id="btn">our achievements</a>
+            <h2 id="text"></h2>
+        </section>
+    </a>
+
+
+</body>
+
+<script>
+    function goto(){
+        location.href="./LOGIN.html"
+    }
+    function loadCSS() {
+        var sheet = document.createElement('style');
+        sheet.innerHTML =
+            "header {transform: translateY(0px); opacity: 1; transition: transform 1.5s ease-in, opacity 2s ease-in;}\n"
+            + "section img#moon {transition: width 1.5s ease-in, height 1.5s ease-in, margin-left 1.5s ease-in; width: 100%; height: 100%; margin-left: 0px;}\n"
+            + "section img#stars {transform: translateY(0px); transition: transform 1.5s ease-in;}\n"
+            + "section #btn {transform: translateY(-67px); opacity: 1; transition: transform 1.5s ease-in, opacity 2s ease-in;}\n"
+            + "section img#mountain {transform: translateY(0px); transition: transform 1.5s ease-in;}\n"
+            + "section #text {transform: translateY(90px); transition: transform 1.5s ease-in;}\n"
+            + "section img#mountain-front {transition: margin-top 1.5s ease-in; margin-top: 0px;}";
+        document.body.appendChild(sheet);
+    }
+</script>
+
+</html>
+    <!--Ahmed sayed-->
